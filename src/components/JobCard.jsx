@@ -4,7 +4,7 @@ import { format } from "date-fns";
 import { Link } from "react-router-dom";
 
 const JobCard = ({ job }) => {
-  console.log(job);
+  // console.log(job);
   const formatDate = format(new Date(job.date.startDate), "dd/MM/yyyy");
 
   return (
