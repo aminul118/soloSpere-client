@@ -12,6 +12,7 @@ const AddJob = () => {
     const { min_price, max_price, ...newJob } = initialData;
     newJob.priceRange = { min: min_price, max: max_price };
     newJob.date = { startDate: startDate };
+    newJob.bids_count = 0;
     console.log(newJob);
     fetch(`${import.meta.env.VITE_API_URL}/job`, {
       method: "POST",
